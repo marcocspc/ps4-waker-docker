@@ -1,0 +1,7 @@
+version: "3.7"
+services:
+  ps4-waker:
+    build: .
+    volumes:
+      - "${PWD}/credentials:/data/credentials"
+    network_mode: host
